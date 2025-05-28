@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Admin Panel</title>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+    <button onclick="location.href='index.html'">Go to Homepage</button>
+  </header>
+
+  <section id="upload">
+    <h2>Upload New Wallpaper</h2>
+    <form id="uploadForm">
+      <input type="file" id="image" required>
+      <input type="text" id="title" placeholder="Title" required>
+      <select id="category" required>
+        <option value="nature">Nature</option>
+        <option value="space">Space</option>
+        <option value="animals">Animals</option>
+        <option value="cars">Cars</option>
+        <option value="abstract">Abstract</option>
+      </select>
+      <button type="submit">Upload</button>
+    </form>
+  </section>
+
+  <section id="wallpapers-list">
+    <h2>Manage Wallpapers</h2>
+    <ul id="wallpapers-list-ul">
+      <!-- Uploaded wallpapers will be listed here -->
+    </ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

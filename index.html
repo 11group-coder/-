@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>8K Wallpapers</title>
+</head>
+<body>
+  <header>
+    <h1>8K Wallpapers</h1>
+    <input type="text" id="search" placeholder="Search wallpapers..." oninput="filterWallpapers()">
+    <button onclick="location.href='login.html'">Login</button>
+    <button onclick="location.href='register.html'">Register</button>
+  </header>
+
+  <nav id="categories">
+    <button onclick="filterCategory('nature')">Nature</button>
+    <button onclick="filterCategory('space')">Space</button>
+    <button onclick="filterCategory('animals')">Animals</button>
+    <button onclick="filterCategory('cars')">Cars</button>
+    <button onclick="filterCategory('abstract')">Abstract</button>
+    <button onclick="filterCategory('all')">All</button>
+  </nav>
+
+  <main id="wallpapers">
+    <!-- Wallpapers will be dynamically loaded here -->
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
